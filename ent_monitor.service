@@ -1,0 +1,10 @@
+[Unit]
+Description=entrance monitoring
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/ESP32_GateKeeper/udp_rev_to_slack.py
+Type=simple
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
